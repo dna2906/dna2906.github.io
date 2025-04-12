@@ -33,3 +33,109 @@ background-color: rgb(120, 192, 192);
     color: darkslateblue;
 }
  
+.clase_Static {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    margin-top: 0px;
+   margin-left:20px ;
+   margin-right:80px; 
+}
+
+.clase_Static2 {
+    font-size: 20px;
+    background-color: aqua;
+    position:static;  
+    top: 20px;  /* esto no funciona en static */
+    left:80px ;  /* esto no funciona en static */
+    right:200px;  /* esto no funciona en static */
+    
+}
+
+.clase_Relative{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative:hover {
+    position:relative; 
+    top: 100px;
+    left: 100px;
+    z-index: -5;
+    /* z-index para colocar adelante o atras en profundidad respecto a otro elemento  */
+}
+
+.clase_Relative2{
+    font-size: 20px;
+    background-color: rgb(187, 218, 77); 
+    height: 250px;
+    width: 200px;
+}
+.clase_Relative2:hover {
+    position:relative; 
+    margin-top: 100px;
+    margin-left: 100px;
+    
+    
+}
+
+.clase_Absolute {
+    font-size: 20px;
+    background-color: aquamarine;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+
+}
+
+.clase_Relative3 {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 250px;
+    width: 200px;
+    position: relative;
+
+}
+
+.clase_AbsoluteRelative {
+    font-size: 20px;
+    background-color:chartreuse ;
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    bottom: 300px;
+    left: 600px;
+    z-index: -5;
+
+}
+
+.clase_Fixed {
+    height: 200px;
+    width: 150px;
+    position: fixed;
+    left: 500px;
+    bottom: 0px;
+    z-index: -10;
+    
+
+}
+
+.marca_agua{
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 999;
+
+}
+
+.clase_Sticky {
+    position: sticky;
+    font-size: 40px;
+    top: 0px;
+    left: 40px;
+    height: 300px;
+
+}
+
