@@ -83,8 +83,8 @@ background-color: rgb(120, 192, 192);
 .clase_Absolute {
     font-size: 20px;
     background-color: aquamarine;
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     position: absolute;
     top: 200px;
     left: 100px;
@@ -106,7 +106,7 @@ background-color: rgb(120, 192, 192);
     height: 250px;
     width: 150px;
     position: absolute;
-    bottom: 300px;
+    bottom: 300px; /* de abajo hacia arriba osea sube*/
     left: 600px;
     z-index: -5;
 
@@ -131,11 +131,74 @@ background-color: rgb(120, 192, 192);
 }
 
 .clase_Sticky {
-    position: sticky;
+    position:sticky;
     font-size: 40px;
     top: 0px;
     left: 40px;
     height: 300px;
 
+}
+
+.bloque { /* estilo display por defecto*/
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color: aquamarine;
+}
+
+.tipoinlineblock { /* estilo display inine-block */
+
+    background-color: rgb(255, 47, 0);
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(127, 255, 185);
+    display:inline-block;
+    width:500px ;
+}
+
+.enlinea {
+    background-color: red;
+    display: inline;
+    font-size: 30px;
+    margin: 2px;
+    color: beige;
+    width: 80px;
+    height: 40px;
+}
+
+.tiponone {  /* estilo display none */
+    background-color: blue;
+    font-size: 20px;
+    margin: 20px;
+    color: aquamarine;
+    display: none;
+}
+
+.tipohidden {
+    font-size: 20px;
+    margin: 20px;
+    color: rgb(94, 219, 178);
+    visibility: hidden;
+    height: 300px;
+}
+
+.tipoflex {
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.claseNav {
+    font-size:30px;
+    padding-inline:0px;
+    color: black;
+    display:inline;
+    list-style-type:none;
+
+}
+
+.claseNav a:hover {
+    background-color: cadetblue;
 }
 
