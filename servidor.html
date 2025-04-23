@@ -306,6 +306,53 @@ las doscientas millas, de conformidad con la ley y
     <a href="#POSICIONINICIAL"> VOLVER AL INICIO </a>
 
 
+    <h2>Formulario de registro</h2>
+
+<form action="servidor.html"   method="post">
+
+  <p> <label for="nombre"> Nombre: <input type="text"  id="nombre"> </label> </p>
+  <p> <label for="apellido"> Apellido: <input type="text"  id="apellido"> </label> </p>
+  <p> <label for="edad"> Edad: <input type="text"  id="edad"> </label> </p>
+  <p> <label for="observacion"> Observación: 
+    <textarea name="observacion" id="observacion" 
+    style="height: 100px; width: 80px;"></textarea> 
+  </label> 
+  </p>
+
+  <p>
+    <label for="estature"> Estatura 
+      <select name="grupoestatura" id="select">
+        <option value="seleccione"> Seleccione </option>
+        <option value="menor de 1.50m">menor de 1.50m </option>
+        <option value="de 1.50m a 1.59">de 1.50m a 1.59 </option>
+        <option value="de 1.60m a 1.69">de 1.60m a 1.69 </option>
+        <option value="mayor o igual a 1.70m"> mayor o igual a 1.70m </option>
+
+      </select>
+    </label>
+  </p>
+
+  <p> <label > Cursos llevados </label>
+    <br>
+    <input type="checkbox" name="cursos" value="lenguaje para dss" id="LDSS">
+      <label for="LDSS"> Lenguaje para DSS </label> <br>
+    <input type="checkbox" name="cursos" value="nuevas tendencias" id="NT">
+      <label for="NT"> Nuevas tendencias </label> <br>
+    <input type="checkbox" name="cursos" value="introduccion investigacion" id="II">
+      <label for="II"> Introducción investigación </label> <br>
+
+  </p>
+
+  <label for="fecha"> SELECCIONE FECHA: 
+    <input style="font-size:25px" type="date" name="fecha" id="fecha">
+  </label> 
+  <br>
+  <br>
+  <button type="submit" style="font-size:20px ;" > enviar </button>
+
+
+
+</form>
 
   
 

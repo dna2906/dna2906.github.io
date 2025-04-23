@@ -83,11 +83,11 @@ background-color: rgb(120, 192, 192);
 .clase_Absolute {
     font-size: 20px;
     background-color: aquamarine;
-    height: 200px;
+    height: 250px;
     width: 200px;
     position: absolute;
-    top: 200px;
-    left: 100px;
+    top: 300px;
+    left: 600px;
 
 }
 
@@ -200,5 +200,32 @@ background-color: rgb(120, 192, 192);
 
 .claseNav a:hover {
     background-color: cadetblue;
+}
+
+.claseNav ul {
+    list-style-type: none;
+    display: block;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.claseNav li a {
+    text-decoration: none;
+    padding: 6px 11px;
+    display: block;
+}
+
+.claseNav >li {
+    float: left;
+}
+
+.claseNav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.claseNav li:hover>ul {
+    display: block;
 }
 
