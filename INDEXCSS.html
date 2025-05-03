@@ -271,7 +271,7 @@ las doscientas millas, de conformidad con la ley y
 
   <h4> IMPORTANTE: calibrar el height del sticky con  el tamaño del texto</h4>
 
-<br>
+<br><br>
   <h2> USO DE VISUALIZACIÓN DISPLAY </h2>
 
   <h3> Elemento desaparecido mediante display none</h3>
@@ -279,10 +279,10 @@ las doscientas millas, de conformidad con la ley y
   <div class="enlinea"> Elemento 1 de inline </div>
   <div class="enlinea"> Elemento 2 de inline </div>
   <div class="tipoinlineblock"> Elemento 3 de inline-block </div>
-
+<br><br>
   <h3> Elemento oculto mediante visibility hidden </h3>
   <div class="tipohidden" > Elemento de estilo hidden </div>
-
+<br>
   <h2> USO DE VISUALIZACIÓN DISPLAY FLEX</h2>
 
   <div class="tipoflex">
@@ -311,9 +311,9 @@ las doscientas millas, de conformidad con la ley y
 
 <form action="servidor.html"   method="post">
 
-  <p> <label for="nombre"> Nombre: <input type="text" id="nombre" autofocus required> </label> </p>
-  <p> <label for="apellido"> Apellido: <input type="text"  id="apellido"> </label> </p>
-  <p> <label for="edad"> Edad: <input type="number"  id="edad"> </label> </p>
+  <p> <label for="nombre"> Nombre: <input type="text" id="nombre" class="datosPersonales" required> </label> </p>
+  <p> <label for="apellido"> Apellido: <input type="text"  id="apellido" class="datosPersonales"> </label> </p>
+  <p> <label for="edad"> Edad: <input type="number"  id="edad" class="datosPersonales"> </label> </p>
   <p> <label for="observacion"> Observación: 
     <textarea name="observacion" id="observacion" 
     style="height: 100px; width: 80px;"></textarea> 
@@ -378,6 +378,9 @@ las doscientas millas, de conformidad con la ley y
 </label> 
 <br><br>
 
+  <button style="font-size: 30px;" type="button"
+  onclick="FCapturarNombre()"> Copiar nombre a observaciones</button>
+  <br><br>
   <button type="submit" style="font-size:20px ;" > enviar </button>
 
 
@@ -421,10 +424,25 @@ las doscientas millas, de conformidad con la ley y
   onclick="FCambioClase1()"> CAMBIO CLASE1
   </button>
   <button style="font-size: 25px;"
-  onclick="FCambioTag1()"> CAMBIO TAG1
+  onclick="FCambioTag1()"> CAMBIO TAG h2
   </button>
+
+<h2> AGREGACIÓN DE TEXTO CON CONCATENACIÓN PERMANENTE</h2>
+
+ <button onclick="FAgregarTextoPermanente()"> Agregar texto a primera variable </button>
 </section>
 
+
+      
+</section>
+      
+<h2> USO DE CREATE ELEMENT </h2>
+
+ <section id="idCrearH1">
+  
+
+  <button onclick="FcreateH1()"> CREAR H1</button>
+ </section>
 
 
   
