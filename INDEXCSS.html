@@ -311,12 +311,12 @@ las doscientas millas, de conformidad con la ley y
 
 <form action="servidor.html"   method="post">
 
-  <p> <label for="nombre"> Nombre: <input type="text" id="nombre" class="datosPersonales" required> </label> </p>
-  <p> <label for="apellido"> Apellido: <input type="text"  id="apellido" class="datosPersonales"> </label> </p>
-  <p> <label for="edad"> Edad: <input type="number"  id="edad" class="datosPersonales"> </label> </p>
+  <p> <label for="nombre"> Nombre: <input type="text" name="nombre" id="nombre" class="datosPersonales" required> </label> </p>
+  <p> <label for="apellido"> Apellido: <input type="text" name="apellido" id="apellido" class="datosPersonales"> </label> </p>
+  <p> <label for="edad"> Edad: <input type="number" name="edad" id="edad" class="datosPersonales"> </label> </p>
   <p> <label for="observacion"> Observación: 
     <textarea name="observacion" id="observacion" 
-    style="height: 100px; width: 80px;"></textarea> 
+    style="height: 120px; width: 100px;"></textarea> 
   </label> 
   </p>
 
@@ -444,6 +444,20 @@ las doscientas millas, de conformidad con la ley y
   <button onclick="FcreateH1()"> CREAR H1</button>
  </section>
 
+ <section> 
+
+  <h2> USO DE FOR clasico y condicionales en una class </h2>
+
+   <p class="classFOR1" style="font-size:25px ;">Texto 1 de classFOR1 [0]</p> 
+    <p class="classFOR1" style="font-size:25px ;">Texto 2 de classFOR1[1]</p>
+    <h2 class="classFOR1" style="font-size:25px ;">Texto 3 de classFOR1[2]</h2>
+    <h3 class="classFOR1" style="font-size:25px ;">Texto 4 de classFOR1[3]</h3>
+
+    <button style="font-size:25px ;" onclick="FUsoFor1()">
+       Reporte de classFOR1</button>
+    <button style="font-size:25px ;" onclick="FEliminarConcat()">
+        Eliminar concatenacion</button>   
+</section>
 
   
 
