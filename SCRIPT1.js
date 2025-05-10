@@ -109,17 +109,85 @@ function FEliminarConcat()
   const vTextoClass = document.getElementsByClassName("classFOR1");
   let rpta =prompt("Estas seguro de eliminar el texto concatenado?(S/N)",'');
   if (rpta=="S" || rpta=="s")  //  doble || significa o
-    { vTextoClass[3].remove();  // eliminar la class de posicion [3]
+    { let rpta2 =prompt("Ingrese el número de fila a eliminar",'')
+      vTextoClass[rpta2].remove();  // eliminar la class de posicion [rpta2]
       alert("CONCATENCION ELMINADA");
     }  
   else
     { if(rpta=="N" || rpta=="n")
-      { alert("NO SE elimnará");
+      { alert("No se elimnará");
       }
       else
-      { alert("OPCION INCORRECTA-INgresa nuevamente");
+      { alert("OPCION INCORRECTA-Ingresa nuevamente");
       }
     }
   //removeChild funciona cuando un nodo(class, id, etx) esta dentro de otro
 }
+
+function FValidarCiclo (){
+
+  //var varciclo =document.getElementById("Segundo");
+   const varciclo =document.getElementsByName("ciclo")
+
+
+   for (let i=0; i < varciclo.length; i++) {
+      if (varciclo[i].checked==true) {
+       //alert("Seleccionaste: " + varciclo[i].value;
+       document.getElementById('observacion').value = varciclo[i].value;
+       return; //Detener el bucle una vez que se encuentre el seleccionado
+      }
+   }
+}
+
+function FCrearDatosCiclo()
+{
+  const radios =document.querySelectorAll('input[name="ciclo"]');
+  radios.forEach(function(radio) {
+    radio.addEventListener('change', function(event) {
+      console.log("Ciclo Seleccionado:" , event.target.value);
+      const cantidad = event.target.value;
+      //event es el evento, target es el elemento radio, value es el valor de radio
+      //radio es el elemento radio
+      //
+      document.getElementById('observacion').value = cantidad;
+    });
+  }
+  );
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const radios =document.querySelectorAll('input[name="ciclo"]');
+
+  radios.forEach(function(radio) {
+    radio.addEventListener('change', function(event) {
+      console.log("Ciclo Seleccionado:" , event.target.value);
+      const cantidad = event.target.value;
+      //event es el evento, target es el elemento radio, value es el valor de radio
+      //radio es el elemento radio
+      //
+      document.getElementById('observacion').value = cantidad;
+    });
+  }
+  );
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const numCole = document.getElementById("numColegios");
+  document.getElementById("numColegios").addEventListener("input",(event)=> {
+    let content ="";
+    const cantR=event.target.value;
+    const vTexto1 = document.getElementById("ejmDOM1");
+    vTexto1.innerText= cantR;   
+    document.getElementById('observacion').value = cantR;
+    for(let i=0; i<cantR ;i++)
+    {
+      content=content + `<div> <label> Colegio ${i+1} </label>
+                          <input type="text" id="cole[${i}" > </div>`;
+    }
+  document.getElementById("DetalleColegios").innerHTML=content;
+  
+  });
+  });
     
+
+

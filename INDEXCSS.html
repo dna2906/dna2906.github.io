@@ -333,6 +333,10 @@ las doscientas millas, de conformidad con la ley y
     </label>
   </p>
 
+  <p style="font-size: 20px;"> <label for="numColegios"> Numero Colegios que estudió: 
+    <input type="number" id="numColegios" name="numColegios"  style="font-size: 20px;" min="1" max="12"> </label> </p>
+    <div id="DetalleColegios"> Detalle Estudios: </div>  
+
   <p> <label > Cursos llevados </label>
     <br>
     <input type="checkbox" name="cursos" value="lenguaje para dss" id="LDSS">
@@ -344,20 +348,19 @@ las doscientas millas, de conformidad con la ley y
 
     </p>
 
-  <p><label>Ciclo actual</label>
-    <br><br>
-    <input style="scale:1.5 ;" type="radio" name="ciclo" value="Primero">
-    <label>Primero</label><br>
-    <input style="scale:1.5 ;" type="radio" name="ciclo" value="Segundo">
-    <label>Segundo</label><br>
-    <input style="scale:1.5 ;" type="radio" name="ciclo" value="Tercero">
-    <label>Tercero</label><br>
-    <input style="scale:1.5 ;" type="radio" name="ciclo" value="Cuarto">
-    <label>Cuarto</label><br>
-    <input style="scale:1.5 ;" type="radio" name="ciclo" value="Quinto">
-    <label>Quinto</label><br>
-    <input style="scale:1.5 ;" type="radio" name="ciclo" value="Sexto">
-    <label>Sexto</label>
+    <p><label>Ciclo actual</label> <br>
+      <input style="scale:1.5 ;" id="Primero" type="radio" name="ciclo" value="Primero">
+      <label for="Primero">Primero</label><br>
+      <input style="scale:1.5 ;" id="Segundo" type="radio" name="ciclo" value="Segundo">
+      <label for="Segundo">Segundo</label><br>
+      <input style="scale:1.5 ;" id="Tercero" type="radio" name="ciclo" value="Tercero">
+      <label for="Tercero">Tercero</label><br>
+      <input style="scale:1.5 ;" id="Cuarto"  type="radio" name="ciclo" value="Cuarto">
+      <label for="Cuarto">Cuarto</label><br>
+      <input style="scale:1.5 ;" id="Quinto" type="radio" name="ciclo" value="Quinto">
+      <label for="Quinto">Quinto</label><br>
+      <input style="scale:1.5 ;" id="Sexto" type="radio" name="ciclo" value="Sexto" >
+      <label for="Sexto">Sexto</label>
   </p>
 <br>
   <label for="fecha"> SELECCIONE FECHA: 
@@ -380,6 +383,12 @@ las doscientas millas, de conformidad con la ley y
 
   <button style="font-size: 30px;" type="button"
   onclick="FCapturarNombre()"> Copiar nombre a observaciones</button>
+  <br><br>
+  <button style="font-size: 30px;" type="button"
+  onclick="FValidarCiclo()"> Enviar ciclo a observación</button>
+  <br><br>
+  <button style="font-size: 30px;" type="button"
+  onclick="FCrearDatosCiclo()"> Enviar ciclo a observación automático</button>
   <br><br>
   <button type="submit" style="font-size:20px ;" > enviar </button>
 
